@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,14 +23,22 @@ Route::get('/home', function () {
     return view('layout.app');
 });
 
-
+//--------------- Dashboard --------------
 Route::get('/dashboard', function () {
     return view('dashboard.layout');
 });
-Route::get('/dashboard/teacher', function () {
-    return view('dashboard.teacher.teacher');
+
+//-------------Dashboard Teacher--------------
+Route::get('/dashboard/teacher', [TeacherController::class, 'index'])->name('Teachers');
+Route::get('/dashboard/teacher/add', [TeacherController::class, 'create'])->name('Add Teachers');
+Route::post('/dashboard/teacher/store', [TeacherController::class, 'store']);
+
+
+//----------------------Dashboard Courses-------------------
+Route::get('/dashboard/courses', function () {
+    return view('dashboard.courses.courses');
 });
 
-Route::get('dashboard/teacher/add', function () {
-    return view('dashboard.teacher.create');
+Route::get('dashboard/course/add', function () {
+    return view('dashboard.courses.create');
 });

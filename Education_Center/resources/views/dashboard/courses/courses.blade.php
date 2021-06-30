@@ -6,8 +6,8 @@
 <div class="card card-primary ">
 	
 	<div class="card-header col">
-		<h2>Teacher</h2>
-		<a href="../dashboard/teacher/add" class="btn btn-primary float-right">Add New Teacher</a>
+		<h2>Courses</h2>
+		<a href="../dashboard/course/add" class="btn btn-primary float-right">Add New Courses</a>
 	</div>
 
 
@@ -16,11 +16,13 @@
 		<table id="example1" class="table table-bordered table-striped">
 			<thead>
 				<tr>
-					<th>Teacher Name</th>
-					<th>Courses Name</th>
-					<th>Image</th>
-					<th>Description</th>
-					<th>contact</th>
+					<th>Course Name</th>
+					<th>Course Details</th>
+					<th>Starting Date</th>
+					<th>Duration</th>
+					<th>Courses Image</th>
+					<th>teachername</th>
+					<th>course Price</th>
 					<th>Action</th>
 					
 				</tr>
@@ -28,11 +30,14 @@
 			<tbody>
 
 				<tr>
-					<td>Saroj </td>
+					
 					<td>Commerce</td>
-					<td>ImageName</td>
-					<td>Description</td>
-					<td>abc@gmail.com</td>
+					<td>bla bla bla bla bla</td>
+					<td>date</td>
+					<td>5 hr </td>
+					<td>Image </td>
+					<td>Saroj </td>
+					<td>$50 </td>
 					<td><button class="btn btn-primary">Edit</button>&nbsp&nbsp<button class=" btn btn-danger">Delete</button></td>
 
 				</tr>

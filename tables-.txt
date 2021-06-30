@@ -1,0 +1,19 @@
+courses
+	-> id
+	   coursesname
+	   coursesdetails
+	   datestart
+	   coursesDuration
+	   coursesImage
+	   teachername
+	   coursesPrice ->paid/free
+	   
+
+Teacher
+	-> id
+	   teachername
+	   coursesname
+	   teacherImage
+	   Description
+	   contacts
+
