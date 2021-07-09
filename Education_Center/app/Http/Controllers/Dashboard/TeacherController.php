@@ -37,7 +37,7 @@ class TeacherController extends Controller
      public function store(Request $request)
     {
         $teacher = $request->all();
-        /*dd($teacher);*/
+        dd($teacher);
         $profilepic= $request->file('profile_pic');
 
         /*dd($profilepic);*/
@@ -47,7 +47,7 @@ class TeacherController extends Controller
         Teacher::create([
             'teachername'=>$request->name,
             'coursename'=>$request->coursename,
-            'image'=>$teacherImage,
+            'imagename'=>$teacherImage,
             'description'=>$request->message,
             'contact'=>$request->email
             
